@@ -10,7 +10,7 @@ function App() {
     <Navbar />
     <div className="d-flex">
     <ItemListContainer  cont="asdsadasd"/> 
-    <ItemListContainer title="Hello Wordl" cont="21dsa321d3a2sdas"/> 
+    <ItemListContainer title="Hello World"/> 
     </div>
     </>
   )
