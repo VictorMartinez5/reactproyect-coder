@@ -1,0 +1,45 @@
+
+
+.container_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    position: sticky;
+    
+    padding-top: 10px;
+  }
+  
+  .img_nav {
+    width: 120px;
+  }
+  .container_nav {
+    margin-top: 10px;
+    color: rgb(42, 41, 41);
+    
+  }
+  li:hover {
+    color: black;
+    scale: 1.05;
+  }
+  
+  .nav_items {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .nav_icons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-right: 2%;
+    font-size: 1.35rem;
+    margin-top: 10px;
+  }
+
+  hr{
+    translate: 0px -10px;
+  }
+

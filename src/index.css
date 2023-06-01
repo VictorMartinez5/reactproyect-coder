@@ -1,0 +1,18 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+li a {
+	color: rgb(42, 41, 41);
+    text-decoration: none;
+  }
+
+.container {
+  width: 90%;
+  margin: auto;
+}
