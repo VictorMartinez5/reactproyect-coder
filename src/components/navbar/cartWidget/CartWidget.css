@@ -1,4 +1,6 @@
 .cart{
     display: flex;
+    translate: 2px 3px;
+    font-size: 26px
     
 }
