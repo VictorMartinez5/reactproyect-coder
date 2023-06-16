@@ -1,0 +1,44 @@
+.portada {
+  position: relative;
+  height: 70vh;
+  background: url("../../assets/img/portada.png") no-repeat center center/cover;
+  translate: 0px -26px;
+  z-index: -2;
+}
+
+.banner {
+  background-color: black;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  translate: 0px -26px;
+}
+
+.banner i {
+  color: white;
+  font-size: 26px;
+  padding-top: 8px;
+}
+
+.items_banner {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  gap: 22px;
+  padding-top: 10px;
+}
+
+.title_banner {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.text_banner {
+  font-size: 0.9rem;
+}
+
+hr{
+  position: relative;
+  z-index: -1;
+}
