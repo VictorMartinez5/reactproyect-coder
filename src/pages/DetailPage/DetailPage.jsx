@@ -2,6 +2,9 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+//Sytles
+import "./DetailPage.css"
+
 //Components
 import CardProduct from "../../components/CardProduct/CardProduct";
 
@@ -10,7 +13,6 @@ const DetailPage = () => {
 
   let { id } = useParams();
 
-
   useEffect(() => {
     fetch(`https://fakestoreapi.com/products/${id}`)
       .then((res) => res.json())
@@ -18,9 +20,12 @@ const DetailPage = () => {
   }, [id]);
 
   return (
-    <div style={{ display: "flex", justifyContent: "center", margin: 20 }}>
-      {prenda.id ? <CardProduct prenda={prenda} /> : null}
-      <p>{prenda.description}</p>
+    <div className="DetailContainer">
+      <div>{prenda.id ? <CardProduct prenda={prenda} /> : null}</div>
+      <div>
+        <p>{prenda.description}</p>
+        <p>{`Categoria: ${prenda.category}`}</p>
+      </div>
     </div>
   );
 };
