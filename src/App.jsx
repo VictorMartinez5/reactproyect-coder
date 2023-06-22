@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import AyudaPage from "./pages/AyudaPage/AyudaPage";
 import PrendasPage from "./pages/PrendaPage/PrendasPage";
 import DetailPage from "./pages/DetailPage/DetailPage"
+import NosotrosPage from "./pages/NosotrosPage/NosotrosPage"
 
 //Styles
 import "./App.css";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/reactproyect-coder/" element={<HomePage />} />
           <Route path="/reactproyect-coder/prendas" element={<PrendasPage />} />
           <Route path="/reactproyect-coder/ayuda" element={<AyudaPage />} />
+          <Route path="/reactproyect-coder/nosotros" element={<NosotrosPage />} />
           <Route path="/reactproyect-coder/detail/:id" element={<DetailPage />} />
         </Routes>
     </Router>

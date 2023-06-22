@@ -5,7 +5,6 @@ import "./navbarstyle.css";
 //Assets
 import ImgLogo from "../../assets/img/logo.svg";
 //Components
-import NavDropdown from "react-bootstrap/NavDropdown";
 import CartWidget from "./CartWidget/CartWidget";
 import HamburguerMenu from "./HamburguerMenu/HamburgerMenu";
 
@@ -19,36 +18,15 @@ function Navbar() {
           <Link className="li" to="/reactproyect-coder/">
             Inicio
           </Link>
-          <Link className="li" to="#">Nuevo</Link>
 
-          <NavDropdown title="Prendas" id="basic-nav-dropdown">
-            <NavDropdown.Item>
-              <Link className="li" to="/reactproyect-coder/prendas">
-                Hoddies
-              </Link>
-            </NavDropdown.Item>
-            <NavDropdown.Item >
-              <Link className="li" to="/reactproyect-coder/prendas">
-                Camperas
-              </Link>
-            </NavDropdown.Item>
-            <NavDropdown.Item >
-              <Link className="li" to="/reactproyect-coder/prendas">
-                Remeras
-              </Link>
-            </NavDropdown.Item>
-            <NavDropdown.Item >
-              <Link className="li" to="/reactproyect-coder/prendas">
-                Pantalones
-              </Link>
-            </NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item>
-              <Link className="li" to="/reactproyect-coder/prendas">
-                Todos
-              </Link>
-            </NavDropdown.Item>
-          </NavDropdown>
+          <Link className="li" to="/reactproyect-coder/prendas">
+            Prendas
+          </Link>
+
+          <Link className="li" to="/reactproyect-coder/nosotros">
+            Sobre Nosotros
+          </Link>
+
           <Link className="li" to="/reactproyect-coder/ayuda">
             Ayuda
           </Link>
