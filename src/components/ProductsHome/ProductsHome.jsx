@@ -2,7 +2,9 @@ import CardProduct from "../CardProduct/CardProduct"
 
 const ProductsHome = () => {
     return (
-        
+        <div>
+            <CardProduct />
+        </div>
     )
 }
 
