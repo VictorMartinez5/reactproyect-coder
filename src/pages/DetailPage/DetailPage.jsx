@@ -9,22 +9,22 @@ import "./DetailPage.css"
 import CardProduct from "../../components/CardProduct/CardProduct";
 
 const DetailPage = () => {
-  const [prenda, setPrenda] = useState({});
+  const [product, setProducts] = useState({});
 
   let { id } = useParams();
 
   useEffect(() => {
     fetch(`https://fakestoreapi.com/products/${id}`)
       .then((res) => res.json())
-      .then((json) => setPrenda(json));
+      .then((json) => setProducts(json));
   }, [id]);
 
   return (
     <div className="DetailContainer">
-      <div>{prenda.id ? <CardProduct prenda={prenda} /> : null}</div>
+      <div>{product.id ? <CardProduct product={product} /> : null}</div>
       <div>
-        <p>{prenda.description}</p>
-        <p>{`Categoria: ${prenda.category}`}</p>
+        <p>{product.description}</p>
+        <p>{`Categoria: ${product.category}`}</p>
       </div>
     </div>
   );

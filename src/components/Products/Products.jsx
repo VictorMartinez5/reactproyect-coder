@@ -8,24 +8,15 @@ import "./Products.css"
 //Componentes
 import CardProduct from "../CardProduct/CardProduct";
 
-const Prendas = () => {
-  const [prenda, setPrenda] = useState([]);
-
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((json) => setPrenda(json));
-  }, []);
-
-
+const Products = ({products}) => {
 
   return (
       <div className="Cards-List">
-      {prenda.map((prenda) => {
+      {products.map((product) => {
         return (
-          <div style={{ margin: 10 }} key={prenda.id}>
-            <Link to={`/reactproyect-coder/detail/${prenda.id}`}>
-              <CardProduct prenda={prenda} />
+          <div style={{ margin: 10 }} key={product.id}>
+            <Link to={`/reactproyect-coder/detail/${product.id}`}>
+              <CardProduct product={product} />
             </Link>
           </div>
         )
@@ -35,4 +26,4 @@ const Prendas = () => {
   ); 
 };
 
-export default Prendas;
+export default Products;
